@@ -1,0 +1,34 @@
+// -*- mode: jsonc -*-
+{
+    "height": 24,
+    "modules-left": [
+        "niri/workspaces"
+    ],
+    "modules-center": [
+        "niri/window"
+    ],
+    "modules-right": [
+        "clock",
+        "tray"
+    ],
+    "tray": {
+        "spacing": 8
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H:%M:%S %d.%m.%Y}",
+        "interval": 1
+        //"format-alt": "{:%Y-%m-%d}"
+    },
+    "niri/window": {
+        "icon": true,
+        "icon-size": 16,
+        "rewrite": {
+            "(.*) — Zen Browser": "$1",
+            "(.*)  — Kate": "$1",
+            "(.*) * — Kate": "$1",
+            "(.*) — Dolphin": "$1",
+            "(.*) - Visual Studio Code": "$1"
+        }
+    }
+}

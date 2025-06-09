@@ -1,0 +1,61 @@
+* {
+    font-family: FontAwesome, JetBrains Mono;
+    font-size: 12px;
+}
+
+window#waybar {
+    background-color: rgb(21, 21, 21);
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+}
+
+#workspaces button {
+    padding: 0 2px;
+}
+
+#workspaces button.focused {
+    background-color: #296b00;
+    box-shadow: inset 0 -1px #0b9f00;
+}
+
+#workspaces button.urgent {
+    background-color: #eb4d4b;
+}
+
+#clock,
+#tray{
+    padding: 0 8px;
+    color: #ffffff;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#clock {
+    background-color: #3f3f3f;
+}
+
+#tray {
+    padding: 0 8 0 2px;
+    background-color: #3f3f3f;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}

@@ -1,0 +1,6 @@
+font=Roboto 9
+background-color=#212121FF
+text-color=#FFFFFFFF
+border-color=#1C7331FF
+default-timeout=7000
+max-visible=-1
