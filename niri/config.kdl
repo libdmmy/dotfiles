@@ -17,7 +17,7 @@ cursor {
 }
 
 layout {
-    gaps 6
+    gaps 0
 
     preset-column-widths {
         proportion 0.33333
@@ -49,6 +49,10 @@ environment {
 
 prefer-no-csd
 
+spawn-at-startup "swaybg" "-i" "/home/libdmmy/.config/niri/wallpaper.png"
+spawn-at-startup "waybar"
+spawn-at-startup "mako"
+
 screenshot-path "~/scrsht-%d.%m.%Y-%H.%M.%S.png"
 
 window-rule {
@@ -68,9 +72,10 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Alt+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "gtklock"; }
+    Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "gtklock"; }
 
     Mod+B repeat=false { spawn "pkill" "-USR1" "waybar"; }
+    Mod+Shift+B repeat=false { spawn "pkill" "-USR2" "waybar"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }

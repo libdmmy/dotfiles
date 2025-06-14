@@ -8,8 +8,9 @@
         "niri/window"
     ],
     "modules-right": [
-        "clock",
-        "tray"
+        "niri/language",
+        "tray",
+        "clock"
     ],
     "tray": {
         "spacing": 8
@@ -30,5 +31,9 @@
             "(.*) — Dolphin": "$1",
             "(.*) - Visual Studio Code": "$1"
         }
+    },
+    "niri/language": {
+        "format-en": "en",
+        "format-ru": "ru"
     }
 }

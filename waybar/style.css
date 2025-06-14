@@ -15,6 +15,22 @@ button {
 
 #workspaces button {
     padding: 0 2px;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    background-color: #212121;
+}
+
+tooltip {
+    font-family: Roboto;
+    font-size: 11px;
+    background: rgba(21, 21, 21, 0.5);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+    padding: 4px;
+}
+tooltip label {
+    color: white;
 }
 
 #workspaces button.focused {
@@ -27,8 +43,10 @@ button {
 }
 
 #clock,
+#language,
 #tray{
-    padding: 0 8px;
+    padding: 0px 0px 0px 8px;
+    background-color: #3f3f3f;
     color: #ffffff;
 }
 
@@ -39,16 +57,12 @@ button {
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+    padding-right: 8px;
 }
 
 #clock {
-    background-color: #3f3f3f;
-}
-
-#tray {
-    padding: 0 8 0 2px;
-    background-color: #3f3f3f;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #tray > .passive {
