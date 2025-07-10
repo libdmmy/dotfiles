@@ -1,0 +1,79 @@
+// not yet fully configured
+
+configuration {
+  font: "Roboto 10";
+}
+
+* {
+  background-color: #212121;
+  text-color: #FFF;
+}
+
+window {
+  border-color: #1c7331;
+  border: 1px;
+  padding: 0;
+}
+
+mainbox {
+  padding: 1px;
+}
+
+listview {
+  border: 0px;
+}
+
+prompt {
+  text-color: #aaa;
+}
+
+entry {
+  placeholder: "";
+  text-color: #ddd;
+}
+
+element {
+  orientation: horizontal;
+  children: [element-icon, element-text];
+  spacing: 4px;
+  border: 0;
+  padding: 2px;
+}
+
+element.normal.normal {
+  background-color: #303030;
+  text-color: #CCC;
+}
+
+element.alternate.normal {
+  background-color: #303030; 
+  text-color: #CCC;
+}
+
+element.selected.active {
+  background-color: #1c7331;
+  text-color: #CCC;
+}
+
+element.selected.normal {
+  background-color: #1c7331; 
+  text-color: #CCC;
+}
+
+element-icon {
+  size: 32px;
+}
+
+element-text {
+  text-color: inherit;
+  background-color: inherit;
+}
+
+scrollbar {
+  background-color: #141414;
+  border: 0px;
+  width: 2px;
+  handle-width: 2px;
+  padding: 0px;
+  handle-color: #1c7331;
+}

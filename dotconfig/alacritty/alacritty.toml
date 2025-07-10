@@ -1,0 +1,19 @@
+[window]
+padding = {x=4, y=4}
+opacity = 0.75
+blur = true
+
+[font]
+normal = { family="JetBrains Mono" }
+size = 9
+
+[cursor]
+style = { shape="Beam", blinking="On" }
+blink_interval = 300
+blink_timeout = 0
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = true
